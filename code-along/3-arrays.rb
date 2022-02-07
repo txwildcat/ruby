@@ -3,10 +3,32 @@
 # ruby 3-arrays.rb
 
 # Arrays are lists of things
+favorite_foods = ["tacos", "pizza", "ice cream"]
+p favorite_foods
+
+# we_have_to_go_back = [4, 8, 15, 16, 23, 42]
+# puts we_have_to_go_back
+
+# mixed_array = ["tacos", 12, true]
+# puts mixed_array
+
+shopping_list = [["coffee", "oatly", "diapers"], ["beer", "tacos"]]
+puts shopping_list
 
 # Accessing the array
+puts favorite_foods [0]
+puts favorite_foods [1]
+puts favorite_foods [2]
+puts favorite_foods [3] #this is litterally representing nothing, or nill
+puts favorite_foods [-1] #this is the last element in the array
+
+puts shopping_list [1][1]
 
 # Add to the array
+
+# favorite_foods.push("more tacos") # one way
+favorite_foods = favorite_foods + ["more tacos"] #another way to add something to an existing array
+p favorite_foods
 
 # There are lots of fun things you can do with arrays:
 # https://ruby-doc.org/core-2.7.0/Array.html

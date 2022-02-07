@@ -19,10 +19,21 @@
 weather_data = {
   current: {
     temperature: 67,
-    conditions: "Sunny"
+    conditions: "rainy"
   },
   forecast: [
-    { temperature: 65, conditions: "Mostly Cloudy" },
-    { temperature: 70, conditions: "Partly Cloudy" }
+    { temperature: 65, conditions: "mostly cloudy" },
+    { temperature: 70, conditions: "partly cloudy" }
   ]
 }
+
+current_temp = weather_data[:current][:temperature]
+current_conditions = weather_data[:current][:conditions]
+tomorrow_temp = weather_data[:forecast][0][:temperature]
+tomorrow_conditions = weather_data[:forecast][0][:conditions]
+tomorrow_temp = weather_data[:forecast][1][:temperature]
+tomorrow_conditions = weather_data[:forecast][1][:conditions]
+
+puts "Currently it is #{current_temp} degrees and #{current_conditions}."
+puts "Tomorrow it will be #{tomorrow_temp} and #{tomorrow_conditions}."
+puts "The next day it we will see #{tomorrow_conditions} skies, with a temperature of #{tomorrow_temp}."
